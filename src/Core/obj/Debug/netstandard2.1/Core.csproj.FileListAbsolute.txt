@@ -1,0 +1,9 @@
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\bin\Debug\netstandard2.1\Core.dll
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.dll
+C:\Users\Intergrupo\source\repos\Nexos\src\Core\obj\Debug\netstandard2.1\Core.pdb

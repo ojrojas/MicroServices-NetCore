@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Nexos.Infraestructure</RootNamespace>
+  </PropertyGroup>
+
+ <ItemGroup>
+		<PackageReference Include="Ardalis.EFCore.Extensions" Version="1.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Data\Migrations\" />
+	</ItemGroup>
+	
+
+  
+	<ItemGroup>
+	  <ProjectReference Include="..\Core\Core.csproj" />
+	</ItemGroup>
+
+</Project>

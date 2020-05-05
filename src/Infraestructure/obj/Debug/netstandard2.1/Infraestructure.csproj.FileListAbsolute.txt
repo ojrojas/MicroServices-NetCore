@@ -1,0 +1,12 @@
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\bin\Debug\netstandard2.1\Infraestructure.deps.json
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\bin\Debug\netstandard2.1\Infraestructure.dll
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\bin\Debug\netstandard2.1\Infraestructure.pdb
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\bin\Debug\netstandard2.1\Core.dll
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.AssemblyInfo.cs
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.csproj.CopyComplete
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.dll
+C:\Users\Intergrupo\source\repos\Nexos\src\Infraestructure\obj\Debug\netstandard2.1\Infraestructure.pdb

@@ -1,0 +1,37 @@
+<h1 id="tableLabel">Listar Medicos</h1>
+
+<p>Este componente muestra a los medicos ingresados desde un servicio.</p>
+<p> <a class="nav-link text-dark" [routerLink]="['/medico-crear']">Crear Medicos</a></p>
+
+<p *ngIf="!medicos"><em>Loading...</em></p>
+
+<table class='table table-hover' aria-labelledby="tableLabel" *ngIf="medicos">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Especialidad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let medico of medicos" [class.selected]="medico === selectedMedico" (click)="onSelect(medico)">
+            <td>{{ medico.nombre }}</td>
+            <td>{{ medico.apellido }}</td>
+            <td>{{ medico.especialidad }}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="selectedMedico">
+
+    <h2>{{selectedMedico.nombre | uppercase}} {{selectedMedico.apellido | uppercase}} Detalles</h2>
+    <div><span>Id: </span>{{selectedMedico.id}}</div>
+    <div><span>Nombre: {{selectedMedico.nombre}}</span></div>
+    <div><span>Apellido: {{selectedMedico.apellido}}</span></div>
+    <div><span>Especialidad: {{selectedMedico.especialidad}}</span></div>
+    <button class="btn btn-primary" (click)="EditarMedico(selectedMedico)">Editar</button> | 
+    <button class="btn btn-danger" (click)="EliminarMedico(selectedMedico)">Eliminar</button>
+
+</div>

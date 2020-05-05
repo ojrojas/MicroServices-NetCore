@@ -1,0 +1,71 @@
+<h1 id="tableLabel">Crear Pacientes</h1>
+
+<p>Este componente crea a los pacientes ingresados desde un servicio.</p>
+<p *ngIf="medicos !==  undefined">
+    Por favor de debe crear primero medicos.
+</p>
+
+<form #pacienteForm="ngForm" (ngSubmit)="pacienteForm.form.valid && onSubmit(pacienteForm)">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" name="nombre" class="form-control" [(ngModel)]="model.nombre" #nombre="ngModel"
+        [ngClass]="{ 'is-invalid': pacienteForm.submitted && nombre.invalid }" required>
+      <div class="invalid-feedback" *ngIf="pacienteForm.submitted && nombre.invalid">
+        <p *ngIf="nombre.errors.required">El nombre es requerido</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Segundo Nombre</label>
+      <input type="text" name="segundoNombre" class="form-control" [(ngModel)]="model.segundoNombre" #segundoNombre="ngModel"
+      [ngClass]="{ 'is-invalid': pacienteForm.submitted && segundoNombre.invalid }" required>
+    <div class="invalid-feedback" *ngIf="pacienteForm.submitted && segundoNombre.invalid">
+      <p *ngIf="segundoNombre.errors.required">La segundoNombre es requerido</p>
+    </div>
+    </div>
+  
+    <div class="form-group">
+      <label>Apellido</label>
+      <input type="text" name="apellido" class="form-control" [(ngModel)]="model.apellido" #apellido="ngModel"
+        [ngClass]="{ 'is-invalid': pacienteForm.submitted && apellido.invalid }" required>
+      <div class="invalid-feedback" *ngIf="pacienteForm.submitted && apellido.invalid">
+        <p *ngIf="apellido.errors.required">El apellido es requerido</p>
+      </div>
+    </div>
+  
+  
+
+    <div class="form-group">
+      <label>Segundo Apellido</label>
+      <input type="text" name="segundoApellido" class="form-control" [(ngModel)]="model.segundoApellido" #segundoApellido="ngModel"
+      [ngClass]="{ 'is-invalid': pacienteForm.submitted && segundoApellido.invalid }" required>
+    <div class="invalid-feedback" *ngIf="pacienteForm.submitted && segundoApellido.invalid">
+      <p *ngIf="segundoApellido.errors.required">La segundoApellido es requerido</p>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label>Numero Seguro Social</label>
+      <input type="text" name="numerosegurosocial" class="form-control" [(ngModel)]="model.numeroSeguroSocial" #numerosegurosocial="ngModel"
+      [ngClass]="{ 'is-invalid': pacienteForm.submitted && numerosegurosocial.invalid }" required>
+    <div class="invalid-feedback" *ngIf="pacienteForm.submitted && numerosegurosocial.invalid">
+      <p *ngIf="numerosegurosocial.errors.required">La numerosegurosocial es requerido</p>
+    </div>
+    </div>
+
+
+    <div class="form-group">
+      <label>Medicos</label>
+      <select class="form-control" name="medicoId" [(ngModel)]="model.medicoId" >
+        <option value="">Seleccione un medico</option>
+        <option *ngFor="let medico of medicos" [value]="medico.id">
+          {{medico.nombre}} {{medico.apellido}}
+        </option>
+      </select>
+    </div>  
+  
+    <div class="form-group">
+      <button class="btn btn-danger btn-block">Submit</button>
+    </div>
+  </form>
+
