@@ -20,7 +20,7 @@ export class PacienteService {
         console.log("servicio: ", queryObtenerPacientes);
         return this.http.get<Array<Paciente>>(queryObtenerPacientes).pipe(
             tap(response => {
-                return <Array<Paciente>>response.map(item => {
+                return response.map(item => {
                     return new Paciente({
                         Nombre: item.nombre,
                         Apellido: item.apellido,
