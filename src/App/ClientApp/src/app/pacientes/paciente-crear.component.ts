@@ -15,13 +15,12 @@ export class PacientesCrearComponent
 {
     public model =  new Paciente();
     medicos: Medico[];
-    constructor(private pacienteService : PacienteService, private medicoService: MedicoService)
-    {
-       
+    constructor(
+        private pacienteService : PacienteService, 
+        private medicoService: MedicoService){      
     }
 
-    ngOnInit()
-    {
+    ngOnInit(){
         this.medicoService.ObtenerMedicos()
         .subscribe((val:Medico[]) => {
             this.medicos = val;
