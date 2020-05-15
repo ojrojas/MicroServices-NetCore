@@ -9,14 +9,14 @@ using Nexos.Infraestructure.Data;
 namespace Nexos.Infraestructure.Data.Migrations
 {
     [DbContext(typeof(NexosContext))]
-    [Migration("20200328153543_Nexos280320201012")]
-    partial class Nexos280320201012
+    [Migration("20200515032830_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.0")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

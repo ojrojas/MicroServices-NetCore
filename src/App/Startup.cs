@@ -55,8 +55,8 @@ namespace App
             // use real database
             // Requires LocalDB which can be installed with SQL Server Express 2016
             // https://www.microsoft.com/en-us/download/details.aspx?id=54284
-            services.AddDbContext<NexosContext>(c =>
-                c.UseSqlServer(Configuration.GetConnectionString("NexosConnection")));
+            // services.AddDbContext<NexosContext>(c =>
+            //     c.UseSqlServer(Configuration.GetConnectionString("NexosConnection")));
 
                  services.AddDbContext<NexosContext>(c =>
                 c.UseSqlite(Configuration.GetConnectionString("NexosConnectionSqlite")));

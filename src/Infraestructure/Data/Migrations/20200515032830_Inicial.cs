@@ -2,7 +2,7 @@
 
 namespace Nexos.Infraestructure.Data.Migrations
 {
-    public partial class Nexos280320201012 : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
