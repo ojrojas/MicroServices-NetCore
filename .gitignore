@@ -1,0 +1,7 @@
+src/App/ClientApp/node_modules
+src/Core/bin/
+src/Core/obj/
+src/Infraestructure/bin/
+src/Infraestructure/obj/
+src/App/bin/
+src/App/obj/

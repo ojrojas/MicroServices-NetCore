@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\Core.csproj": {}
+    "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\Core.csproj": {
+    "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\Core.csproj",
+        "projectUniqueName": "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Intergrupo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\obj\\",
+        "projectPath": "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/Core.csproj",
+        "packagesPath": "/home/ojrojas/.nuget/packages/",
+        "outputPath": "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Intergrupo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/ojrojas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,12 +45,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.202/RuntimeIdentifierGraph.json"
         }
       }
     }

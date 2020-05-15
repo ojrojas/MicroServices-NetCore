@@ -58,6 +58,9 @@ namespace App
             services.AddDbContext<NexosContext>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("NexosConnection")));
 
+                 services.AddDbContext<NexosContext>(c =>
+                c.UseSqlite(Configuration.GetConnectionString("NexosConnectionSqlite")));
+
             ConfigureServices(services);
         }
 

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EDCRK/GRluCVTn6MIcVqljMy5SvdUs8vJL3H7rClU0XOEneXbjcgeFoyybDWKkdZJKi8WSI1XM0QUpRF7C071A==",
+  "dgSpecHash": "wQ/tznUjLij2rFPir9RXsuthn7TLyFya30xMByn0Yw8SZL6Vr+v8yCzxpq1hYDLNtEI3h94QkGR8OvFsK0viwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Intergrupo\\source\\repos\\Nexos\\src\\Core\\Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/home/ojrojas/.nuget/packages/netstandard.library.ref/2.1.0/netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

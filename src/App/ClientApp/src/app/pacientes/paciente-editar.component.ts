@@ -1,22 +1,18 @@
 import { Component } from "@angular/core";
-import { PacienteService } from "./Paciente.service";
-import { Paciente } from "./Paciente.model";
+import { Paciente } from "./paciente.model";
+import {PacienteService} from './paciente.service';
 
 @Component({
     selector:'app-editar-Paciente',
-    templateUrl :'Paciente-editar.component.html'
+    templateUrl :'paciente-editar.component.html'
 })
 
 export class PacienteEditarComponent
 {
     public model =  new Paciente();
-    constructor(private PacienteService: PacienteService)
-    {
+    constructor(private PacienteService: PacienteService){}
 
-    }
-
-    ngOnInit()
-    {
+    ngOnInit(){
         this.PacienteService.ObtenerPacienteId(window.localStorage.getItem("PacienteIdEditar"))
         .subscribe((val:Paciente) => {
             this.model = val;
