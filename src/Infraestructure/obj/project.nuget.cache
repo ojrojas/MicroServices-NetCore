@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UxO2wNqXz2W2p3907xn3trQ1iboxH+1o9Wu4hFuZbH52GSTDpJHLdZO4Pr9ZOdAK16sDN5KOf2Wp7yilc0755w==",
+  "dgSpecHash": "VToMzf1NYTR26owoQffzQhajzs3gzFftpmUWP1tI7df0h+z7HA9zxLqYYw/r75xA29NkPxXXYYJwFKq+Cjs8CQ==",
   "success": true,
   "projectFilePath": "/home/ojrojas/Sources/Projects/NetCore/MicroServicesNetCore/src/Infraestructure/Infraestructure.csproj",
   "expectedPackageFiles": [

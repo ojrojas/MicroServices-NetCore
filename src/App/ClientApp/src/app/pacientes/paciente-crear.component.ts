@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { PacienteService } from "./paciente.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Paciente } from "./paciente.model";
@@ -11,19 +11,22 @@ import { MedicoService } from "../medicos/medico.service";
     templateUrl: 'paciente-crear.component.html'
 })
 
-export class PacientesCrearComponent
+export class PacientesCrearComponent implements OnInit
 {
     public model =  new Paciente();
+    label:boolean=false;
     medicos: Medico[];
     constructor(
         private pacienteService : PacienteService, 
-        private medicoService: MedicoService){      
-    }
+        private medicoService: MedicoService){
+            }
 
     ngOnInit(){
         this.medicoService.ObtenerMedicos()
         .subscribe((val:Medico[]) => {
             this.medicos = val;
+            if(this.medicos.length > 0)
+                this.label=true;
         },error => {console.log(`No se obtuvo respuesta`)},
         ()=> {
             console.log("consulta finalizada",this.medicos);

@@ -1,12 +1,10 @@
 <h1 id="tableLabel">Crear Pacientes</h1>
 
 <p>Este componente crea a los pacientes ingresados desde un servicio.</p>
-<p *ngIf="medicos">
-    
-</p>
+<br>
 
-<p *ngIf="medicos; else elseBlock"></p>
-<ng-template #elseBlock><p>Por favor de debe crear primero medicos.</p></ng-template>
+<p *ngIf="label; else elseBlock"></p>
+<ng-template #elseBlock><p><span class="alert alert-danger">Por favor de debe crear primero medicos.</span></p></ng-template>
 
 <form #pacienteForm="ngForm" (ngSubmit)="pacienteForm.form.valid && onSubmit(pacienteForm)">
     <div class="form-group">

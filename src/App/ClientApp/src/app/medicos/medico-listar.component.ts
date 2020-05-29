@@ -37,13 +37,13 @@ export class MedicosListarComponent
     EliminarMedico(){
     window.localStorage.removeItem("medicoIdEliminar");
     window.localStorage.setItem("medicoIdEliminar", this.selectedMedico.id);
-    this.router.navigate(['medico-eliminar']);
+    this.router.navigate(['medicos/medico-eliminar']);
 
     }
 
     EditarMedico(){
         window.localStorage.removeItem("medicoIdEditar");
         window.localStorage.setItem("medicoIdEditar", this.selectedMedico.id);
-        this.router.navigate(['medico-editar']);
+        this.router.navigate(['medicos/medico-editar']);
     }
 }

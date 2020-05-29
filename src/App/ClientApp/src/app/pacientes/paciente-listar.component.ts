@@ -37,13 +37,13 @@ export class PacientesListarComponent
     EliminarPaciente(){
     window.localStorage.removeItem("PacienteIdEliminar");
     window.localStorage.setItem("PacienteIdEliminar", this.selectedPaciente.id);
-    this.router.navigate(['Paciente-eliminar']);
+    this.router.navigate(['pacientes/paciente-eliminar']);
 
     }
 
     EditarPaciente(){
         window.localStorage.removeItem("PacienteIdEditar");
         window.localStorage.setItem("PacienteIdEditar", this.selectedPaciente.id);
-        this.router.navigate(['Paciente-editar']);
+        this.router.navigate(['pacientes/paciente-editar']);
     }
 }
